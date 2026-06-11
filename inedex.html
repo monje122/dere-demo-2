@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpeca - Clon de Diseño</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <i class="fas fa-map-marker-alt"></i> Urbanizacion El Prado, Avenida Principal 11, local 75 20 valencia carabobo
+            </div>
+            <div class="top-bar-right">
+                <a href="mailto:pedidosalpeca@gmail.com"><i class="fas fa-envelope"></i> @ferreteria_calimioyo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#"><h1>CALIMIOYO<span> C.A.</span></h1></a>
+            </div>
+            <div class="search-bar">
+                <div class="category-select">
+                    Todas las Categorías <i class="fas fa-chevron-down"></i>
+                </div>
+                <input type="text" placeholder="Buscar por productos...">
+                <button type="button"><i class="fas fa-search"></i> buscar</button>
+            </div>
+            <div class="header-actions">
+                <div class="account-action">
+                    <span>Hola</span>
+                    <strong>Iniciar Sesión</strong>
+                </div>
+                <div class="cart-action">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="cart-text">
+                        <span>Carrito</span>
+                        <strong>$0,00</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container nav-inner">
+                <div class="nav-departments">
+                    <i class="fas fa-bars"></i> Departamentos
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h2>Somos la Ferretería más completa</h2>
+                        <p>Variedad, calidad y economía en un solo lugar.</p>
+                        <a href="#" class="btn btn-primary">Ver productos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-banners">
+                <div class="banner banner-1">
+                    <h3>Herramientas Manuales</h3>
+                    <a href="#">Comprar ahora</a>
+                </div>
+                <div class="banner banner-2">
+                    <h3>Iluminación LED</h3>
+                    <a href="#">Ver ofertas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="nuevos">Nuevos</button>
+            <button class="tab-btn" data-tab="mas-vendidos">Más Vendidos</button>
+            <button class="tab-btn" data-tab="destacados">Destacados</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected via JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Sobre Alpeca</h3>
+                <p>Somos más que una ferretería, somos tu aliado a la hora de realizar tus compras, variedad, calidad y economía en un solo lugar.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Menú</h3>
+                <ul>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Mi Cuenta</a></li>
+                    <li><a href="#">Lista de Deseos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contáctanos</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Carabobo, Valencia</li>
+                    <li><i class="fas fa-phone"></i> +58 0424495909</li>
+                    <li><i class="fas fa-envelope"></i> @ferreteria_calimioyo</li>
+                </ul>
+                <div class="social-links">
+                    <span>Síguenos: </span>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 | FERRETERIA CALIMIOYO,C.A. | Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <a href="#" class="whatsapp-widget">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
